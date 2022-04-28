@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'RockSalt';
+  src: url('../public/RockSalt-Regular.ttf');
+}
+
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  background-color: #eae6ee;
+  max-width: 100%;
+}
+
+/* include border and padding in element width and height */
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

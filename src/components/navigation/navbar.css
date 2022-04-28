@@ -1,0 +1,99 @@
+.nav-bar {
+    width: 100vw;
+    height: 200px;
+    font-family: 'RockSalt';
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #7210cc;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #eae6ee;
+    z-index: 10;
+}
+
+#logo {
+    height: 200px;
+    margin: 0px 0px 10px 0px;
+}
+
+#icons {
+    align-items: center;
+    justify-content: right;
+}
+
+#return-up {
+    height: 50px;
+    opacity: 0;
+    transition: all 0.125s;
+    margin: 25px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px
+}
+
+#desktopNav {
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.navbutton {
+    border: none;
+    background-color: inherit;
+    color: #7210cc;
+    font-size: 16px;
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+    width: max-content;
+    font-family: 'RockSalt';
+}
+
+#desktopNav .navbutton:hover {
+    color: #2b808c;
+    cursor: pointer;
+}
+
+#desktopNav .navbutton::after {
+    content: '';
+    margin-top: 5px;
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #2b808c;
+    transition: width .3s;
+}
+
+#desktopNav .navbutton:hover::after {
+    width: 100%;
+    transition: width .3s;
+} 
+
+.icon {
+    display: none;
+    height: 60px;
+    margin: 0 60px 0 0;
+    grid-area: return;
+    justify-self: end;
+}
+
+#mobileNavfalse {
+    display: none;
+}
+
+#mobileNavfalse .navbutton{
+    display: none;
+}
+
+#mobileNavtrue {
+    display: none;
+}
+
+#mobileNavtrue .navbutton {
+    display: none;
+}

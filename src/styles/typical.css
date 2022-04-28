@@ -1,0 +1,75 @@
+body {
+    z-index: 0;
+}
+
+body .mobileMenutrue {
+    margin-top: 200px;
+}
+
+body .mobileMenufalse {
+    margin-top: 200px;
+}
+
+body h1 {
+    font-family: 'RockSalt';
+    color: #2b808c;
+    text-align: center;
+    padding: 50px;
+}
+
+.recipeGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-items: center;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.recipeTile {
+    width: 200px;
+    text-align: center;
+    z-index: 0;
+}
+
+.recipeTile h2 {
+    color: #2b808c;
+    margin: 5px auto;
+    text-align: left;
+}
+
+.recipeTile img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: grayscale(25%);
+}
+
+.recipeTile p {
+    text-align: left;
+}
+
+.recipeTile .summary {
+    position: absolute;
+    transform: translateY(-80px);
+}
+
+.recipeTile .summary p {
+    margin: 5px;
+    color: black;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px white;
+}
+
+.recipeTile .detailsfalse {
+    display: none;
+}
+
+.recipeTile .detailstrue {
+    display: block;
+    text-align: left;
+}
+
+.recipeTile ul, .recipeTile ol {
+    padding-left: 20px;
+}

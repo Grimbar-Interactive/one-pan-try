@@ -1,0 +1,72 @@
+@media screen and (max-width: 1000px) {
+    #desktopNav {
+        margin-left: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    #desktopNav {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .nav-bar {
+        height: 100px;
+    }
+
+    #logo {
+        height: 100px;
+        margin: 0px 20px 10px 20px;
+    }
+
+    .icon {
+        display: block;
+        height: 60px;
+        margin: 25px;
+    }
+
+    #desktopNav {
+        display: none;
+    }
+
+    #mobileNavfalse {
+        display: flex;
+        padding: 10px 0;
+        margin: 0;
+        width: 100vw;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        background-color: #eae6ee;
+        transform: translateY(-300px);
+        transition: transform 0.5s;
+        z-index: -1;
+    }
+
+    #mobileNavtrue {
+        display: flex;
+        padding: 10px 0;
+        margin: 0;
+        width: 100vw;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: #eae6ee;
+        transform: translateY(100px);
+        transition: transform 0.5s;
+        z-index: -1;
+    }
+
+    #mobileNavtrue .navbutton {
+        display: block;
+        background-color: transparent;
+        padding: 5px 20px;
+    }
+
+}

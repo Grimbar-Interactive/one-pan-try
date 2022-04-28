@@ -1,0 +1,35 @@
+@media screen and (max-width: 1000px) {
+    .recipeGrid {
+        grid-template-columns: repeat(3, 250px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body .mobileMenufalse {
+        margin-top: 100px;
+        transition: margin-top, 0.5s; 
+    }
+    
+    body .mobileMenutrue {
+        margin-top: 350px;
+        transition: margin-top, 0.5s; 
+    }
+
+    body h1 {
+        font-size: 25px;
+    }
+
+    .recipeGrid {
+        grid-template-columns: repeat(2, 250px);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .recipeGrid {
+        grid-template-columns: repeat(1, 250px);
+    }
+
+    body h1 {
+        padding: 30px;
+    }
+}
