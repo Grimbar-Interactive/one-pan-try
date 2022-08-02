@@ -29,10 +29,11 @@ body h1 {
     width: 200px;
     text-align: center;
     z-index: 0;
+    font-family: 'RockSalt'
 }
 
 .recipeTile h2 {
-    color: #2b808c;
+    color: #7210cc;
     margin: 5px auto;
     text-align: left;
 }
@@ -47,18 +48,20 @@ body h1 {
 
 .recipeTile p {
     text-align: left;
+    font-size: 11px;
 }
 
 .recipeTile .summary {
     position: absolute;
-    transform: translateY(-80px);
+    transform: translateY(-105px);
+    font-size: 10px;
 }
 
 .recipeTile .summary p {
     margin: 5px;
     color: black;
     font-weight: bolder;
-    text-shadow: 2px 2px 2px white;
+    text-shadow: 2px 2px 1px white;
 }
 
 .recipeTile .detailsfalse {
@@ -68,6 +71,7 @@ body h1 {
 .recipeTile .detailstrue {
     display: block;
     text-align: left;
+    font-size: 12px;
 }
 
 .recipeTile ul, .recipeTile ol {
